@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+[class*="section"] {
+  background-color: red;
+  border: 1px solid black;
+}
+
+.section-aside{
+  width: 200px;
+  height: 100%;
+
+}
+
+.section-center{
+  width: calc(100% - 200px);
+  height: 100%;
+
+}
+
+.section-main{
+  height: calc(100vh - 100px);
+  display: flex;
+
+}
+.section-footer{
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  align-items: center;
+  }
+
+.text-menu{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.text-menu:before {
+
+  content : "";
+  position: absolute;
+  bottom  : 0;
+  left: 25%;
+  height  : 1px;
+  width   : 50%;
+  border-bottom:2px solid green;
+
+}
